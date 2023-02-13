@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript DOM</title>
+</head>
+<body>
+<div id="main">
+    Hello World
+</div>
+
+<div id="replace">
+    Hello World
+</div>
+<div class="data">
+    Hello Class
+</div>
+<div class="data">
+    Hello Class
+</div>
+    
+</body>
+<script type="text/javascript">
+    //Using ID
+    let a =document.getElementById("main");//display the sam code in console bar
+    let b =document.getElementById("main").innerHTML; //display the content of the tag
+    let c =document.getElementById("replace").innerHTML="<h2>Pradeep Yadav</h2>";
+    console.log(a);
+    console.log(b);
+    console.log(c);
+
+    //Using Class
+    let p= document.getElementsByClassName('data');
+    let y= document.getElementsByClassName('data')[0].innerHTML;
+    let v= document.getElementsByClassName('data')[1].innerHTML;
+    alert(y);
+    console.log(v)
+    console.log(p);
+
+</script>
+</html>
