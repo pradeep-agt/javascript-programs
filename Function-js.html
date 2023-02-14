@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript DOM</title>
+</head>
+<body>
+
+<div id="main">
+    Hello World
+</div>
+<input type="text" name="message" id="message">
+<button type="submit" id="greet" onclick="greet()">Greet</button>
+
+<div class="greet">
+
+</div>
+</body>
+<script type="text/javascript">
+
+    let b = document.getElementById('main').innerHTML="<h1>pradeep Yadav</h1>";
+    console.log(b);
+    // let c = document.getElementByClassNames('greet')[0];
+    
+
+    function greet(){
+    
+        let name= document.getElementById('message').value;
+        alert(name);
+        let c = document.getElementsByClassName('greet')[0].innerHTML="Hello :"+name;
+
+    }
+</script>
+
+</html>
