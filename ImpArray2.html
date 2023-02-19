@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Array 2</title>
+</head>
+<body>
+    <h2 id="res"></h2>
+    <h2 id="res2"></h2>
+    <h2 id="res3"></h2>
+    <button onclick="pop()">Pop</button>
+    <button onclick="push()">push</button>
+    <button onclick="reverse()">reverse</button>
+
+</body>
+<script type="text/javascript">
+
+
+
+
+//remove the last element from the array
+let dream_bikes = ["yamaha","royal enfield","Honda","kawasaki"];
+let demo =dream_bikes;
+document.getElementById("res").innerHTML=dream_bikes;
+function pop(){
+    demo.pop();
+    document.getElementById("res").innerHTML= demo;
+}
+
+
+//add the new element to the array 
+let dream_cars = ["yamaha","royal enfield","Honda","kawasaki"];
+let demo2 =dream_cars;
+document.getElementById("res2").innerHTML=dream_cars;
+function push(){
+    demo2.push("fortuner");
+    document.getElementById("res2").innerHTML= demo2;
+}
+
+
+
+//reverse the element from the array 
+let dream_cars3 = ["yamaha","royal enfield","Honda","kawasaki"];
+let demo3 =dream_cars3;
+document.getElementById("res3").innerHTML=dream_cars3;
+function reverse(){
+    demo3.reverse();
+    document.getElementById("res3").innerHTML= demo3;
+}
+
+</script>
+
+</html>

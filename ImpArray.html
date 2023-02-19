@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Array</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+
+  let cars= ["BMW","Farrari","Range Rover","Tata Moters"];
+  //check the cars is array or not
+  let flag= Array.isArray(cars);
+  document.write(flag);
+
+  //print the data of array 
+  let fav_car=cars.valueOf();
+  document.write(fav_car);
+
+
+  //concate two array 
+  let bike = ["yamaha","royal enfield", "KTM","Honda","kawasaki"];
+  let data_merge =cars.concat(bike);
+  document.write(data_merge); 
+  
+  //check the value to the index 
+
+  let index_value = bike.indexOf("kawasaki");
+  document.write(index_value);
+
+
+</script>
+
+</html>
